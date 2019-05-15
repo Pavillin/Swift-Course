@@ -62,10 +62,33 @@ func maximum(x:Double, y:Double, z:Double) -> Double {
     return maximumValue
 }
 
+//Write func minimum, using int instead of double
+// returns the maximum of its three Integer parameters
+func minimum(x:Int, y:Int, z:Int) -> Int {
+    var minimumValue = x // assume x is the largest to start
+    
+    // determine whether y is greater than minimumValue
+    if y < minimumValue {
+        minimumValue = y
+    }
+    
+    // determine whether z is greater than minimumValue
+    if z < minimumValue {
+        minimumValue = z
+    }
+    
+    return minimumValue
+}
+
 // test function maximum
 print("Maximum of 3.3, 2.2 and 1.1 is: \(maximum(x: 3.3, y: 2.2, z: 1.1))")
 print("Maximum of 1.1, 3.3 and 2.2 is: \(maximum(x: 1.1, y: 3.3, z: 2.2))")
 print("Maximum of 2.2, 1.1 and 3.3 is: \(maximum(x: 2.2, y: 1.1, z: 3.3))")
+
+// test function minimum
+print("Minimum of 5, 10 and 15 is: \(minimum(x: 5, y: 10, z: 15))")
+print("Minimum of 8, 2 and 7 is: \(minimum(x: 8, y: 2, z: 7))")
+print("Minimum of 45, 24 and 33 is: \(minimum(x: 45, y: 24, z: 33))")
 
 
 // Example: Shifted and scaled random integers
