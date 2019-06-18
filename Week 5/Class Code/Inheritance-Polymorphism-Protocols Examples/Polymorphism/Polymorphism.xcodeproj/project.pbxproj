@@ -13,6 +13,7 @@
 		1D20D6011A33455D0010C21B /* BasePlusCommissionEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D20D6001A33455D0010C21B /* BasePlusCommissionEmployee.swift */; };
 		1D20D6031A3345790010C21B /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D20D6021A3345790010C21B /* Employee.swift */; };
 		1D20D6051A3349870010C21B /* SalariedEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D20D6041A3349870010C21B /* SalariedEmployee.swift */; };
+		FEB19DAA22B93DB00019B5D1 /* HourlyEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB19DA922B93DB00019B5D1 /* HourlyEmployee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		1D20D6001A33455D0010C21B /* BasePlusCommissionEmployee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePlusCommissionEmployee.swift; sourceTree = "<group>"; };
 		1D20D6021A3345790010C21B /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		1D20D6041A3349870010C21B /* SalariedEmployee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalariedEmployee.swift; sourceTree = "<group>"; };
+		FEB19DA922B93DB00019B5D1 /* HourlyEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyEmployee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				1D20D5F71A3344F30010C21B /* main.swift */,
 				1D20D6021A3345790010C21B /* Employee.swift */,
 				1D20D6041A3349870010C21B /* SalariedEmployee.swift */,
+				FEB19DA922B93DB00019B5D1 /* HourlyEmployee.swift */,
 			);
 			path = Polymorphism;
 			sourceTree = "<group>";
@@ -116,6 +119,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 1D20D5EB1A3344F30010C21B;
@@ -133,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEB19DAA22B93DB00019B5D1 /* HourlyEmployee.swift in Sources */,
 				1D156CD61A3B8980008CEFC9 /* UtilityFunctions.swift in Sources */,
 				1D20D5FF1A3345540010C21B /* CommissionEmployee.swift in Sources */,
 				1D20D6031A3345790010C21B /* Employee.swift in Sources */,
