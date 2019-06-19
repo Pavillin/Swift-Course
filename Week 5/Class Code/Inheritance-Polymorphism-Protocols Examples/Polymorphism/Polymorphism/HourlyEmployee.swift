@@ -2,8 +2,7 @@
 //  HourlyEmployee.swift
 //  Polymorphism
 //
-//  Created by Hannah on 2019-06-18.
-//  Copyright © 2019 Deitel & Associates, Inc. All rights reserved.
+//  Created by Dylan on 2019-06-18.
 //
 
 import Foundation
@@ -43,7 +42,10 @@ public class HourlyEmployee : Employee {
     
     //description computed property
     public override var description: String {
-        return String(format: "%@: %@\n%@: %@\n%@: %@", "Hourly Employee", super.description, "Hours Worked", hoursWorked, "Rate Per Hour", ratePerHour)
-    }//end of description
+        return String(format: "%@: %@\n%@: %@\n%@: %@",
+                      "Hourly Employee", super.description,
+                      "Hours Worked", hoursWorked,
+                      "Rate Per Hour", formatAsCurrency(number: ratePerHour))
+    }
     
 }

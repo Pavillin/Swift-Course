@@ -54,3 +54,5 @@ for currentEmployee in employees {
     print("Earned: \(formatAsCurrency(number: currentEmployee.earnings))\n")
 }
 
+let hourlyemp = HourlyEmployee(name: "Dylan", hoursWorked: 48, ratePerHour: 20);
+print(hourlyemp?.description);
