@@ -1,14 +1,14 @@
 //
-//  BankAccount.swift
+//  bacc.swift
 //  Dylan-Sprague_COMP2125_Exercise1
 //
 //  Created by Hannah on 2019-06-18.
 //  Copyright © 2019 Dylan. All rights reserved.
 //
 
-import Cocoa
+import Foundation
 
-public class BankAccount {
+public class bacc {
     private var accountNumber: Int{
         didSet{
             if(accountNumber < 0){
@@ -17,7 +17,6 @@ public class BankAccount {
             }
         }
     }
-    
     private var customerName: String{
         didSet{
             if(customerName == ""){
@@ -26,7 +25,6 @@ public class BankAccount {
             }
         }
     }
-    
     var interestRate: Double{
         didSet{
             if(interestRate < 0.0 || interestRate > 2.0){
@@ -46,7 +44,6 @@ public class BankAccount {
             }
         }
     }
-    
     public var description: String{
         get{
             return "Account Number: \(accountNumber); Customer Name:  \(customerName); Interest Rate:  \(interestRate); Account Balance:  \(accountBalance)";
@@ -60,7 +57,6 @@ public class BankAccount {
         interestRate = 0.0;
         accountBalance = 10.0;
     }
-    
     public init(accountNumber: Int, customerName: String, interestRate: Double, accountBalance: Double){
         self.accountNumber = accountNumber;
         self.customerName = customerName;
@@ -75,7 +71,6 @@ public class BankAccount {
     public func credit(amount: Double){
         self.accountBalance += amount;
     }
-    
     public func debit(amount: Double){
         self.accountBalance -= amount;
     }

@@ -1,5 +1,5 @@
 //
-//  BankAccountExtension.swift
+//  baccex.swift
 //  Dylan-Sprague_COMP2125_Exercise1
 //
 //  Created by Hannah on 2019-06-18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension BankAccount{
+extension bacc{
     var interest: Double{
         get{
             return self.interestRate * self.accountBalance;
@@ -17,4 +17,5 @@ extension BankAccount{
     
     public convenience init(accountNumber: Int, name: String, balance: Double ) {
         self.init(accountNumber: accountNumber, customerName: name,  interestRate: 0.0, accountBalance: balance);
-    }}
+    }
+}
